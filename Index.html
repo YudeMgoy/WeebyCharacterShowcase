@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weeby Character Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio class="sound naruto">
+        <source src="Naruto.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="sound tanjiro">
+        <source src="Tanjiro Voice.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="sound luffy">
+        <source src="Lutfi.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="sound ichigo">
+        <source src="Ichigo.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="sound asta">
+        <source src="Asta.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="sideBar">
+            <div class="textbox bgNaruto ">
+                <img src="./narutod hd.jpg" alt="" class="bgImage">
+                <h3 class="name1">Narutod</h3>
+                <h3 class="name2">Uzumaki</h3>
+            </div>    
+            <div class="textbox bgTanjiro active">
+                <img src="./tanjidor jd.png" alt="" class="bgImage">
+                <h3 class="name1">Tanjidor</h3>
+                <h3 class="name2">Kamado</h3>
+            </div>      
+            <div class="textbox bgLuffy">
+                <img src="./lutfi hd.jpg" alt="" class="bgImage">
+                <h3 class="name1">Monkey</h3>
+                <h3 class="name2">D Lutfi</h3>
+            </div>  
+            <div class="textbox bgIchigo">
+                <img src="./ichigo hd.jpg" alt="" class="bgImage">
+                <h3 class="name1">Ichigo</h3>
+                <h3 class="name2">Kawasaki</h3>
+            </div>  
+            <div class="textbox bgAsta">
+                <img src="./asto hd.jpg" alt="" class="bgImage">
+                <h3 class="name1">Baka</h3>
+                <h3 class="name2">Asto</h3>
+            </div>  
+        </div>
+        <div class="sideAbsolute">
+            <img src="./Narutod.png" alt="" class="charImg bgNaruto">
+            <img src="./tanjidor.png" alt="" class="charImg bgTanjiro active">
+            <img src="./Luffy.png" alt="" class="charImg bgLuffy">
+            <img src="./Ichigo.png" alt="" class="charImg bgIchigo">
+            <img src="./Asto.png" alt="" class="charImg bgAsta">
+        </div>
+        <div class="contentWrapper">
+            <img src="./Konoha.jpg" alt="" class="bgImage bgImage2 bgNaruto">
+            <img src="./stone.jpg" alt="" class="bgImage bgImage2 bgTanjiro active">
+            <img src="./wano kuni.png" alt="" class="bgImage bgImage2 bgLuffy">
+            <img src="./city.jpg" alt="" class="bgImage bgImage2 bgIchigo">
+            <img src="./clover kingdom.png" alt="" class="bgImage bgImage2 bgAsta">
+            <div class="detailBox bgNaruto">
+                <p class="charDetail">
+                    Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.
+                </p><br><p class="charDetail">
+                    Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.
+                </p>
+            </div>  
+            <div class="detailBox bgTanjiro active">
+                <p class="charDetail">
+                    Tanjirou Kamado is the main protagonist of Kimetsu no Yaiba, who becomes a Demon Hunter and joins the Demon Killing Corps to hunt down the demon who murdered his family and turned his sister Nezuko into a demon.
+                </p>
+            </div>            
+            <div class="detailBox bgLuffy">
+                <p class="charDetail">
+                    Luffy is the captain of the Straw Hat Pirates and is best friends with all of them and values them over all else. At first glance, Luffy does not appear to be very intelligent, often seeing things in a childish manner and can easily be amazed by the simplest things. However, because he views the world in a straightforward and simple manner, he is occasionally the only person who can see past the events and see what should be done.
+                </p>
+            </div>            
+            <div class="detailBox bgIchigo">
+                <p class="charDetail">
+                    For the most part, Ichigo appears like a normal teenage boy, the one exception to that is his spiky, orange hair, a trait which he has been ridiculed about for years. He is a fairly tall, and lean-built person with peach skin and brown eyes. Since becoming a Shinigami, he has become noticeably more muscular, as noted by his sister Karin. When in his spiritual form, Ichigo wears standard Shinigami attire with the addition of a strap across his chest.
+                </p>
+            </div>            
+            <div class="detailBox bgAsta">
+                <p class="charDetail">
+                    Asta is an orphan who was left under the care of a church in the village of Hage. He has dreams of being the Emperor Magus, however, he is unable to use magic and trains a lot to have good physical strength. The grimoire he received held a 5 leaf clover, a number never heard of before.
+                </p>
+            </div>            
+            <a href="https://bit.ly/downloadweeby">
+                <div class="linkBox">
+                    <p>Weeby now available on </p>
+                    <img src="./ps.png" alt="">
+                </div>  
+            </a>                
+            <div class="charList">                
+                <div class="charBox" onclick="change('bgNaruto');playNaruto()">
+                    <img src="./naruto face.jpg" alt="" class="char">
+                </div>
+                <div class="charBox" onclick="change('bgTanjiro');playTanjiro()">
+                    <img src="./tanjidor face.jpg" alt="" class="char">
+                </div>
+                <div class="charBox" onclick="change('bgLuffy');playLuffy()">
+                    <img src="./Luffy face.jpg" alt="" class="char">
+                </div>
+                <div class="charBox" onclick="change('bgIchigo');playIchigo()">
+                    <img src="./Ichigo face.jpg" alt="" class="char">
+                </div>
+                <div class="charBox" onclick="change('bgAsta');playAsta()">
+                    <img src="./Asto face.jpg" alt="" class="char">
+                </div>                                                                            
+            </div>          
+        </div>        
+    </div>
+
+    <script>
+        function change(char){
+            var coms = document.getElementsByClassName("textbox");
+            for(var i = 0; i<coms.length;i++){
+                coms[i].classList.remove("active");                
+            }        
+            coms = document.getElementsByClassName("charImg");
+            for(var i = 0; i<coms.length;i++){
+                coms[i].classList.remove("active");                
+            }            
+            coms = document.getElementsByClassName("detailBox");
+            for(var i = 0; i<coms.length;i++){
+                coms[i].classList.remove("active");                
+            }            
+            coms = document.getElementsByClassName("bgImage2");
+            for(var i = 0; i<coms.length;i++){
+                coms[i].classList.remove("active");                
+            }            
+            var actives = document.getElementsByClassName(char)
+            for(var i = 0; i<actives.length;i++){
+                actives[i].classList.add("active");
+            }            
+        }
+
+        function playTanjiro(){
+            var sounds = document.getElementsByClassName("sound");
+            for(var i = 0; i<sounds.length;i++){
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+            document.getElementsByClassName("tanjiro")[0].play();
+        }
+        function playNaruto(){
+            var sounds = document.getElementsByClassName("sound");
+            for(var i = 0; i<sounds.length;i++){
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+            document.getElementsByClassName("naruto")[0].play();
+        }
+        function playIchigo(){
+            var sounds = document.getElementsByClassName("sound");
+            for(var i = 0; i<sounds.length;i++){
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+            document.getElementsByClassName("ichigo")[0].play();
+        }
+        function playLuffy(){
+            var sounds = document.getElementsByClassName("sound");
+            for(var i = 0; i<sounds.length;i++){
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+            document.getElementsByClassName("luffy")[0].play();
+        }
+        function playAsta(){
+            var sounds = document.getElementsByClassName("sound");
+            for(var i = 0; i<sounds.length;i++){
+                sounds[i].pause();
+                sounds[i].currentTime = 0;
+            }
+            document.getElementsByClassName("asta")[0].play();
+        }
+    </script>
+</body>
+</html>

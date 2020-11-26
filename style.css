@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 100%;
+    max-height:100vh !important;
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    flex-direction: row;    
+}
+.sideBar{
+    position: relative;
+    height: 100vh !important;
+    flex-basis: 30%;    
+    max-width:400px !important;
+    min-width:300px;
+    flex:1;
+    display:flex;
+    flex-direction: column;       
+    overflow: hidden;   
+    -webkit-box-shadow: 7px 0px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 7px 0px 5px 0px rgba(0,0,0,0.52);
+    box-shadow: 7px 0px 5px 0px rgba(0,0,0,0.52);
+    z-index: 1;
+    overflow: hidden;
+}
+    .sideBar .bgNaruto{
+        background-color: rgb(124, 67, 24);
+    }
+    .sideBar .bgTanjiro{
+        background-color: #142B28;        
+    }
+    .sideBar .bgLuffy{
+        background-color: #83060B;        
+    }
+    .sideBar .bgIchigo{
+        background-color: #2C0D0F;        
+    }
+    .sideBar .bgAsta{
+        background-color: #18130F;
+    }
+    .sideBar .textbox{
+        display:flex;
+        flex-direction: row;
+        height: 100%;
+        width:100%;
+        position: relative;
+        margin:auto;
+        transition: ease-in-out 0.8s;
+        transform-origin: bottom;
+        overflow: hidden;
+        flex:0;
+        /* transform: scaleY(0); */
+    }
+    .sideBar .active{
+        transform-origin: top;
+        flex:1;
+    }
+
+    .name1, .name2{        
+        writing-mode: vertical-lr;
+        font-size: 8em;
+        color:rgba(255,255,255,0.3);
+        transform:scale(-1);
+        line-height: 1em;
+        margin-bottom:40px;
+        margin-left:20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+    }
+    .name1{
+        /* letter-spacing: -50px; */
+    }    
+    .name2{
+        margin-bottom: 200px;
+    }
+    .bgIchigo .name2{
+        margin-bottom: 100px;
+    }
+.contentWrapper{
+    position: relative;
+    overflow: hidden;    
+    flex:3;
+    background-color: #000;
+}    
+    .bgImage{
+        min-width:100%;
+        min-height:100%;
+        filter: blur(2px);
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        position: absolute;        
+        opacity: 0.4;
+    }
+    .contentWrapper .bgImage{
+        transform:translate(-50%,-50%);
+        transition: ease-out 1s;
+        opacity:0;  
+    }
+    .sideBar .bgImage{
+        filter:blur(0px);
+        opacity:0.4;
+        min-height: 100vh;
+        height: 100vh;
+    }
+    .contentWrapper .detailBox{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,20px);
+        z-index: 10;      
+        font-size:1.2em;  
+        transition: ease-out 1s;
+        opacity:0;        
+    }
+    .contentWrapper .active{
+        transform:translate(-50%,-50%);
+        opacity:1;
+    }
+    .contentWrapper img.active{
+        transform:translate(-50%,-50%);
+        opacity:0.4;
+    }
+    .detailBox .charDetail{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:rgba(255,255,255,0.8);
+        text-align: center;
+    }
+.sideAbsolute{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:30%;
+    min-width:300px;
+    max-width:400px;    
+    z-index:999;
+}
+    .sideAbsolute .charImg{
+        position: absolute;
+        top:50%;
+        right:-20%;
+        transform:translate(-1000px,-50%);
+        height:90%;     
+        transition: ease-out 1s;
+    }
+    .sideAbsolute .active{
+        transform: translate(40%,-50%);
+    }
+    .sideAbsolute .bgNaruto.active{
+        transform: translate(20%,-50%);
+        height:90%;
+    }
+    .sideAbsolute .bgAsta.active{
+        height:100%;
+    }
+
+.charList{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    bottom:20px;
+    right:20px;
+}
+    .charList .charBox{
+        position: relative;
+        margin:4px;
+        width:40px;
+        height: 40px;
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 50%;
+        transform:translateY(0);
+        border: solid white 1px;
+        overflow:hidden;
+        transition: ease-in-out .3s;
+    }
+    .charBox:hover{
+        cursor: pointer;
+        transform: translateY(-4px);
+    }
+    .charBox img{
+        width:100%;
+    }
+
+
+.linkBox{
+    position: absolute;
+    top:20px;
+    right:20px;
+    display: flex;    
+    flex-direction: row;
+    justify-content: flex-end;    
+    align-items: center;    
+}
+    .linkBox p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:0.8em;
+        color:rgba(255,255,255,0.8);
+    }
+    .linkBox img{
+        height:34px;
+    }
